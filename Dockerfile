@@ -1,4 +1,4 @@
-FROM ppc64le/debian
+FROM ppc64le/rhel7
 COPY hello /
 USER 0
 CMD ["/hello"]
