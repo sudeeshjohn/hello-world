@@ -1,4 +1,4 @@
-FROM rhel7
+FROM debian
 COPY hello /
 USER 0
 CMD ["/hello"]
