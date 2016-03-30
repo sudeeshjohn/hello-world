@@ -1,5 +1,5 @@
-FROM ppc64le/rhel7
+FROM rhel7
 COPY hello /
-USER 0
+USER 1001
 CMD ["/hello"]
 CMD ["/bin/sh"]
