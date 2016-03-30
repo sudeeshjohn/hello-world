@@ -11,7 +11,7 @@ ehdr:
 	times 8 db 0                     ; reserved (zeroes)
 
 	dw 2              ; e_type:	Executable file
-	dw 0x3e           ; e_machine:	AMD64
+	dw 0x3e           ; e_machine:	PPC64LE
 	dd 1              ; e_version:	current version
 	dq _start         ; e_entry:	program entry address (0x78)
 	dq phdr - $$      ; e_phoff	program header offset (0x40)

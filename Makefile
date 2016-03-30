@@ -1,5 +1,5 @@
-hello: hello.asm
-	nasm -o $@ $<
+hello: hello.c
+	gcc hello.c -o hello
 	chmod +x hello
 
 .PHONY: clean

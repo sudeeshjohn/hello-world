@@ -1,6 +1,6 @@
-FROM debian:jessie
+FROM ppc64le/debian:jessie
 
-RUN apt-get update && apt-get install -y make nasm && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y make nasm gcc && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /usr/src/hello
 COPY . /usr/src/hello
